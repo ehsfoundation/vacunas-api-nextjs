@@ -36,5 +36,10 @@ export default function Home() {
       <button onClick={handleSend} disabled={loading}>
         {loading ? 'Enviando...' : 'Enviar'}
       </button>
-      <div style={{ marginTop: '1rem'
-
+      <div style={{ marginTop: '1rem' }}>
+        <strong>Respuesta:</strong>
+        <p>{response}</p>
+      </div>
+    </div>
+  );
+}
