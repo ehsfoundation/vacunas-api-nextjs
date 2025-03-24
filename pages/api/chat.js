@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: 'gpt-4',
+        model: 'gpt-3.5-turbo',
         messages: [
           { role: 'system', content: 'Eres un planificador de vacunas para pacientes con condiciones de salud. Responde con claridad y evidencia.' },
           { role: 'user', content: message }
